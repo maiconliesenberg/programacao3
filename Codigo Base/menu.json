@@ -1,0 +1,19 @@
+[{
+  "nome": "Rodrigo",
+  "sobrenome": "Gregori",
+  "veTV": false,
+  "numeroDeMonitores": 2 
+},
+{
+  "nome": "José",
+  "sobrenome": "Silva",
+  "veTV": true,
+  "numeroDeMonitores": 3 
+},
+{
+  "nome": "Pereira",
+  "sobrenome": "Funk",
+  "veTV": true,
+  "numeroDeMonitores": 10 
+}
+]

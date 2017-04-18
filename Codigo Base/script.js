@@ -1,4 +1,4 @@
-var dataUrl = "data.json",
+var dataUrl = "menu.json",
     itensHtml = "item-snippet.html";
     
 // função facilitadora para inserir HTML em um elemento
@@ -29,15 +29,11 @@ function constroiPagina(dados) {
   $ajaxUtils.sendGetRequest(itensHtml, function(itensHtml) {
     for (var i = 0, max = dados.length; i < max; i++) {
       var html = itensHtml,
-          nome = dados[i].name.first + " " + dados[i].name.last,
-          empresa = dados[i].company,
-          email = dados[i].email,
-          fone = dados[i].phone;
-          
-      html = inserePropriedade(html, "nome", nome);
-      html = inserePropriedade(html, "empresa", empresa);
-      html = inserePropriedade(html, "email", email);
-      html = inserePropriedade(html, "fone", fone);
+          titulo = dados[i].titulo,
+          conteudo = dados[i].Conteudo,
+        
+		  html = inserePropriedade(html, "titulo", titulo);
+		  html = inserePropriedade(html, "conteudo", conteudo);
       
       htmlFinal += html;
     }
